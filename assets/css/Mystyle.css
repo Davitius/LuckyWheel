@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.4s; }
+
+body {
+  background-color: lightgrey; }
+
+.insertForm {
+  background-color: #1B2838;
+  color: navajowhite;
+  min-height: 100vh;
+  width: 70%;
+  height: 70%; }
+  .insertForm .row .addForm {
+    padding: 1em;
+    text-align: center; }
+    .insertForm .row .addForm .textareaDiv {
+      width: 100%; }
+      .insertForm .row .addForm .textareaDiv textarea {
+        width: 100%; }
+      .insertForm .row .addForm .textareaDiv .idDiv {
+        text-align: start;
+        height: 100%;
+        display: flex;
+        justify-content: start; }
+        .insertForm .row .addForm .textareaDiv .idDiv .ID {
+          font-size: 150%; }
+        .insertForm .row .addForm .textareaDiv .idDiv input {
+          margin-left: 1em;
+          width: 60px; }
+    .insertForm .row .addForm .backArrow {
+      display: flex;
+      justify-content: start; }
+  .insertForm .row .questionTable {
+    padding: 1em;
+    color: navajowhite;
+    text-align: center; }
+
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  .start .menu {
+    background-color: #1B2838;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px; }
+    .start .menu .databaseText {
+      color: navajowhite;
+      text-align: center;
+      font-size: 80%; }
+    .start .menu .headerDiv {
+      display: flex;
+      justify-content: center; }
+      .start .menu .headerDiv .headerImg {
+        width: 70%; }
+    .start .menu .bodyDiv {
+      height: 100%; }
+      .start .menu .bodyDiv .gameMenuDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .start .menu .bodyDiv .gameMenuDiv .frame {
+          width: 80%; }
+          .start .menu .bodyDiv .gameMenuDiv .frame .userCardDiv {
+            background-color: #75a2d9;
+            border-radius: 6px;
+            border: 2px solid royalblue;
+            width: 100%;
+            height: 100px;
+            margin: 10px 0 10px 0; }
+            .start .menu .bodyDiv .gameMenuDiv .frame .userCardDiv .menuPlayersInputDiv {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              background-color: #111b26; }
+              .start .menu .bodyDiv .gameMenuDiv .frame .userCardDiv .menuPlayersInputDiv .menuPlayersText {
+                color: navajowhite;
+                font-size: 85%; }
+              .start .menu .bodyDiv .gameMenuDiv .frame .userCardDiv .menuPlayersInputDiv .btn-outline-success, .start .menu .bodyDiv .gameMenuDiv .frame .userCardDiv .menuPlayersInputDiv .btn-outline-danger {
+                font-size: 85%; }
+        .start .menu .bodyDiv .gameMenuDiv .menuText {
+          color: white;
+          text-align: center;
+          font-size: 150%; }
+      .start .menu .bodyDiv .scoreListDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .start .menu .bodyDiv .scoreListDiv .SqoreListHeader {
+          color: navajowhite; }
+        .start .menu .bodyDiv .scoreListDiv .sqoreTable {
+          border: 1px solid white; }
+          .start .menu .bodyDiv .scoreListDiv .sqoreTable tr {
+            border: 1px solid white; }
+    .start .menu .footerDiv {
+      display: flex;
+      justify-content: space-between;
+      color: navajowhite;
+      flex-wrap: wrap; }
+
+.game {
+  padding: 0;
+  background-color: #1B2838; }
+  .game .menuBtnDiv .menuBtn {
+    height: 20px;
+    width: 80px;
+    font-size: 70%;
+    border-radius: 6px;
+    background-color: #70fa6b;
+    font-weight: bold; }
+  .game .menuBtnDiv .menuBtn:hover {
+    color: white;
+    background-color: #12570e; }
+  .game .massageAreaDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B2838;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .game .massageAreaDiv .massageAreaSpan {
+      font-size: 150%;
+      color: white; }
+  .game .quest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B2838;
+    flex-direction: column;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 1em;
+    padding-bottom: 10px; }
+    .game .quest .quest_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #111b26;
+      min-height: 50px;
+      border-radius: 6px;
+      padding: 10px;
+      color: navajowhite;
+      font-size: 100%;
+      width: 90%; }
+  .game .quest_word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B2838;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 10px;
+    padding-bottom: 60px; }
+    .game .quest_word .quest_letter_div, .game .quest_word .quest_letter_div2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 80px;
+      border-radius: 6px;
+      font-size: 250%;
+      border: 1px solid #578efa;
+      margin: 5px;
+      background-color: white;
+      padding: 5px; }
+      .game .quest_word .quest_letter_div .shield, .game .quest_word .quest_letter_div2 .shield {
+        width: 40px;
+        height: 60px;
+        background-color: gold;
+        border-radius: 4px;
+        position: absolute; }
+    .game .quest_word .quest_letter_div2 .shield {
+      background-color: #1B2838;
+      transform: translateY(75px); }
+  .game .abcDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80px;
+    background-color: #111b26;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .game .abcDiv .abc_letter_div, .game .abcDiv .abc_letter_div2 {
+      width: 30px;
+      height: 50px;
+      border-radius: 6px;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 150%;
+      margin: 5px; }
+    .game .abcDiv .abc_letter_div2 {
+      background-color: #fa8484; }
+    .game .abcDiv .abc_letter_div:hover {
+      cursor: pointer; }
+    .game .abcDiv .abcShield {
+      position: absolute;
+      background-color: lightgrey;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 90; }
+  .game .gamePad_Div {
+    background-color: #1B2838;
+    margin: 0.5em;
+    padding: 10px; }
+    .game .gamePad_Div .players {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      background-color: #1B2838; }
+      .game .gamePad_Div .players .userCardDiv {
+        background-color: #75a2d9;
+        border-radius: 6px;
+        border: 2px solid royalblue;
+        width: 100%;
+        height: 100px;
+        margin: 10px 0 10px 0; }
+        .game .gamePad_Div .players .userCardDiv .playerImgDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #111b26;
+          height: 100%;
+          padding-top: 10px; }
+          .game .gamePad_Div .players .userCardDiv .playerImgDiv .playerImg {
+            padding: 5px;
+            width: 100%; }
+        .game .gamePad_Div .players .userCardDiv .scoreDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: #111b26; }
+          .game .gamePad_Div .players .userCardDiv .scoreDiv .scoreText {
+            color: navajowhite;
+            font-size: 150%; }
+      .game .gamePad_Div .players .userCardDivActive {
+        background-color: #75a2d9;
+        border-radius: 6px;
+        border: 2px solid royalblue;
+        width: 100%;
+        height: 100px;
+        margin: 10px 0 10px 0;
+        border: 3px solid greenyellow; }
+        .game .gamePad_Div .players .userCardDivActive .playerImgDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #111b26;
+          height: 100%;
+          padding-top: 10px; }
+          .game .gamePad_Div .players .userCardDivActive .playerImgDiv .playerImg {
+            padding: 5px;
+            width: 100%; }
+        .game .gamePad_Div .players .userCardDivActive .scoreDiv {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background-color: #111b26; }
+          .game .gamePad_Div .players .userCardDivActive .scoreDiv .scoreText {
+            color: navajowhite;
+            font-size: 150%; }
+    .game .gamePad_Div .action_circle_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1B2838;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .game .gamePad_Div .action_circle_div .arrow_Div .arrow {
+        width: 30px;
+        transform: rotate(90deg); }
+      .game .gamePad_Div .action_circle_div .action_circle {
+        width: 60%;
+        transition: 2s; }
+      .game .gamePad_Div .action_circle_div .winnerText {
+        text-align: center;
+        color: navajowhite;
+        font-size: 150%; }
+
+@media (max-width: 450px) {
+  .start .menu {
+    width: 100%;
+    height: 100%; }
+    .start .menu .bodyDiv .gameMenuDiv .frame {
+      width: 90%; }
+
+  .game .quest_word .quest_letter_div2 .shield {
+    z-index: -1;
+    opacity: 0; }
+  .game .gamePad_Div .action_circle_div .action_circle {
+    width: 90%; } }
+
+/*# sourceMappingURL=Mystyle.css.map */

@@ -1,0 +1,509 @@
+@import "Mymixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 0.4s;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.insertForm{
+  @include BGcolor;
+  color: navajowhite;
+  min-height: 100vh;
+  width: 70%;
+  height: 70%;
+  .row{
+    .addForm{
+      padding: 1em;
+      text-align: center;
+      .textareaDiv{
+        width: 100%;
+        textarea{
+          width: 100%;
+        }
+        .idDiv{
+          text-align: start;
+          height: 100%;
+          display: flex;
+          justify-content: start;
+          .ID{
+              font-size: 150%;
+          }
+          input{
+            margin-left: 1em;
+            width: 60px;
+          }
+        }
+      }
+      .backArrow{
+          display: flex;
+        justify-content: start;
+      }
+    }
+    .questionTable{
+      padding: 1em;
+      color: navajowhite;
+      text-align: center;
+      table{
+
+      }
+    }
+  }
+}
+
+
+
+.start {
+  @include flexallcenter;
+  min-height: 100vh;
+
+  .menu {
+    @include BGcolor;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    width: 70%;
+    height: 70%;
+    border-radius: 10px;
+
+    .databaseText {
+      color: navajowhite;
+      text-align: center;
+      font-size: 80%;
+    }
+
+    .headerDiv {
+      display: flex;
+      justify-content: center;
+
+      .headerImg {
+        width: 70%;
+      }
+    }
+
+    .bodyDiv {
+      height: 100%;
+      //overflow-y: hidden;
+
+      .gameMenuDiv {
+        @include flexallcenter;
+        flex-direction: column;
+        //background-color: #c2fa6b;
+        .frame {
+          width: 80%;
+
+          .userCardDiv {
+            @include userCard;
+
+            .menuPlayersInputDiv {
+              @include flexallcenter;
+              flex-direction: column;
+              background-color: #111b26;
+
+              .menuPlayersText {
+                color: navajowhite;
+                font-size: 85%;
+              }
+              .btn-outline-success, .btn-outline-danger{
+                font-size: 85%;
+              }
+            }
+          }
+        }
+
+        .menuText {
+          color: white;
+          text-align: center;
+          font-size: 150%;
+        }
+      }
+
+      .scoreListDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .SqoreListHeader {
+          color: navajowhite;
+        }
+
+        .sqoreTable {
+          border: 1px solid white;
+
+          tr {
+            border: 1px solid white;
+          }
+        }
+      }
+    }
+
+    .footerDiv {
+      display: flex;
+      justify-content: space-between;
+      color: navajowhite;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.game {
+  padding: 0;
+  @include BGcolor;
+
+  .menuBtnDiv {
+    .menuBtn {
+      height: 20px;
+      width: 80px;
+      font-size: 70%;
+      border-radius: 6px;
+      background-color: #70fa6b;
+      font-weight: bold;
+    }
+
+    .menuBtn:hover {
+      color: white;
+      background-color: #12570e;
+    }
+  }
+
+  .massageAreaDiv {
+    @include flexallcenter;
+    @include BGcolor;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .massageAreaSpan {
+      font-size: 150%;
+      color: white;
+    }
+  }
+
+
+  .quest {
+    @include flexallcenter;
+    @include BGcolor;
+    flex-direction: column;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 1em;
+    padding-bottom: 10px;
+
+
+    .quest_text {
+      @include flexallcenter;
+      background-color: #111b26;
+      min-height: 50px;
+      border-radius: 6px;
+      padding: 10px;
+      color: navajowhite;
+      font-size: 100%;
+      width: 90%;
+    }
+  }
+
+
+  .quest_word {
+    @include flexallcenter;
+    @include BGcolor;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 5em;
+    padding-top: 10px;
+    padding-bottom: 60px;
+
+    .quest_letter_div, .quest_letter_div2 {
+      @include flexallcenter;
+      width: 60px;
+      height: 80px;
+      border-radius: 6px;
+      font-size: 250%;
+      border: 1px solid #578efa;
+      margin: 5px;
+      background-color: white;
+      padding: 5px;
+
+      .shield {
+        width: 40px;
+        height: 60px;
+        background-color: gold;
+        border-radius: 4px;
+        position: absolute;
+      }
+    }
+
+    .quest_letter_div2 {
+      .shield {
+        @include BGcolor;
+        transform: translateY(75px);
+      }
+    }
+  }
+
+
+  .abcDiv {
+    @include flexallcenter;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 80px;
+    background-color: #111b26;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    .abc_letter_div, .abc_letter_div2 {
+      width: 30px;
+      height: 50px;
+      border-radius: 6px;
+      background-color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 150%;
+      margin: 5px;
+    }
+
+    .abc_letter_div2 {
+      background-color: #fa8484;
+    }
+
+    .abc_letter_div:hover {
+      cursor: pointer;
+    }
+
+    .abcShield {
+      position: absolute;
+      background-color: lightgrey;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      z-index: 90;
+    }
+  }
+
+  .gamePad_Div {
+    @include BGcolor;
+    margin: 0.5em;
+    padding: 10px;
+
+    .players {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      @include BGcolor;
+
+
+      .userCardDiv {
+        @include userCard;
+
+        .playerImgDiv {
+          @include flexallcenter;
+          background-color: #111b26;
+          height: 100%;
+          padding-top: 10px;
+
+          .playerImg {
+            padding: 5px;
+            width: 100%;
+          }
+        }
+
+        .scoreDiv {
+          @include flexallcenter;
+          flex-direction: column;
+          background-color: #111b26;
+
+          .scoreText {
+            color: navajowhite;
+            font-size: 150%;
+          }
+        }
+      }
+
+      .userCardDivActive {
+        @include userCard;
+        border: 3px solid greenyellow;
+
+        .playerImgDiv {
+          @include flexallcenter;
+          background-color: #111b26;
+          height: 100%;
+          padding-top: 10px;
+
+          .playerImg {
+            padding: 5px;
+            width: 100%;
+          }
+        }
+
+        .scoreDiv {
+          @include flexallcenter;
+          flex-direction: column;
+          background-color: #111b26;
+
+          .scoreText {
+            color: navajowhite;
+            font-size: 150%;
+          }
+        }
+      }
+    }
+
+    .action_circle_div {
+      @include flexallcenter;
+      @include BGcolor;
+      flex-direction: column;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      .arrow_Div {
+        .arrow {
+          width: 30px;
+          transform: rotate(90deg);
+        }
+      }
+
+      .action_circle {
+        width: 60%;
+        transition: 2s;
+      }
+      .winnerText{
+        text-align: center;
+        color: navajowhite;
+        font-size: 150%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .start {
+    .menu {
+      width: 100%;
+      height: 100%;
+
+      .databaseText {
+      }
+
+      .headerDiv {
+        .headerImg {
+        }
+      }
+
+      .bodyDiv {
+        .gameMenuDiv {
+          .frame {
+            width: 90%;
+
+            .userCardDiv {
+              .menuPlayersInputDiv {
+                .menuPlayersText {
+                }
+              }
+            }
+          }
+
+          .menuText {
+          }
+
+          .gameStartBtn, .newGameBtn {
+          }
+
+          .newGameBtn:hover {
+          }
+
+          .gameStartBtn:hover {
+          }
+        }
+
+        .scoreListDiv {
+          .SqoreListHeader {
+          }
+        }
+      }
+
+      .footerDiv {
+      }
+    }
+  }
+
+
+  .game {
+    .menuBtnDiv {
+      .menuBtn {
+      }
+    }
+
+    .massageAreaDiv {
+      .massageAreaSpan {
+      }
+    }
+
+    .quest {
+      .quest_text {
+      }
+    }
+
+    .quest_word {
+      .quest_letter_div, .quest_letter_div2 {
+        .shield {
+        }
+      }
+
+      .quest_letter_div2 {
+        .shield {
+          z-index: -1;
+          opacity: 0;
+        }
+      }
+    }
+
+    .abcDiv {
+      .abc_letter_div, .abc_letter_div2 {
+      }
+
+      .abc_letter_div2 {
+      }
+
+      .abc_letter_div:hover {
+      }
+
+      .abcShield {
+      }
+    }
+
+    .gamePad_Div {
+      .score {
+        .scoreCard {
+        }
+      }
+
+      .players {
+        .userCard {
+        }
+
+        .playerImg2 {
+        }
+      }
+
+      .action_circle_div {
+        .arrow_Div {
+          .arrow {
+          }
+        }
+        .action_circle {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+}
